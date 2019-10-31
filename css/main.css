@@ -10,9 +10,10 @@ body
     margin: 0;
 }
 
-  header {
-    /* position: fixed;
-    max-width: 400px; */
+  header 
+  {
+    display: grid;
+    grid-auto-columns: auto;
     margin: auto;
     padding: 0.5em;
     padding-inline-start: 4.9em;
@@ -21,33 +22,49 @@ body
     opacity: 70%;
     color: #b176a9;
   }
-  @media only screen and (max-width:820px){
-    header {position: static; width:100%;}
-    .intro {max-width:100%;}
-  }
+
     header ul
     {
       padding-inline-start: 0em;
     }
   
-  nav li {
+  nav li 
+  {
     display: inline;
     border-radius: 18px;
     background-color: #C26179;
     padding: 0.75em;
   }
   
-  a:link {
+  a:link 
+  {
     text-decoration: none;
     color: #404;
   }
 
-  main {
+  main 
+  {
     display: grid;
+    grid-template-columns: auto;
   }
+
+  @media only screen and (min-width:820px)
+   {
+    main 
+    {
+      grid-template-columns: auto auto auto;
+    }
+
+    header 
+    {
+      grid-template-columns: auto auto auto;
+    }
+   } 
+
   .intro {
-    max-width: 30%;
-    margin: auto;
+    min-width: 30%;
+    text-align: left;
+    /* margin: auto; */
   }
   .page {
     text-align: left;

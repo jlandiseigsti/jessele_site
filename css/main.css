@@ -15,26 +15,46 @@ body
     display: grid;
     grid-auto-columns: auto;
     margin: auto;
-    padding: 0.5em;
-    padding-inline-start: 4.9em;
+    padding: 1em;
+    padding-inline-start: 0.5em;
     /* border-radius: 20px; */
     background-color: #580f4f;
     opacity: 70%;
     color: #b176a9;
   }
-
+    #head_contact
+    {
+      text-align: center;
+    }
     header ul
     {
       padding-inline-start: 0em;
     }
+
+    header h1
+    {
+      padding-left: 2em;
+      padding-right: 2em;
+    }
   
-  nav li 
+  nav
   {
-    display: inline;
-    border-radius: 18px;
-    background-color: #C26179;
-    padding: 0.75em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
+    nav ul
+    {
+      display: grid;
+      grid-template-columns: auto;
+    }
+    nav li 
+    {
+      display: inline;
+      border-radius: 18px;
+      background-color: #C26179;
+      padding: 0.75em;
+      margin: 0.25em;
+    }
   
   a:link 
   {
@@ -48,22 +68,11 @@ body
     grid-template-columns: auto;
   }
 
-  @media only screen and (min-width:820px)
-   {
-    main 
-    {
-      grid-template-columns: auto auto auto;
-    }
-
-    header 
-    {
-      grid-template-columns: auto auto auto;
-    }
-   } 
-
   .intro {
     min-width: 30%;
     text-align: left;
+    padding-left: 2em;
+    padding-right: 2em;
     /* margin: auto; */
   }
   .page {
@@ -103,3 +112,21 @@ body
   .hideDeets li{
     display: none;
   }
+
+    /* Changes for widescreen */
+    @media only screen and (min-width:820px)
+    {
+     main 
+     {
+       grid-template-columns: auto auto auto;
+     }
+ 
+     header 
+     {
+       grid-template-columns: auto auto auto;
+     }
+       header ul
+       {
+         grid-template-columns: auto auto auto;
+       }
+    } 

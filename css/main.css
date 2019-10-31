@@ -16,10 +16,9 @@ body
     grid-auto-columns: auto;
     margin: auto;
     padding: 1em;
-    padding-inline-start: 0.5em;
     /* border-radius: 20px; */
     background-color: #580f4f;
-    opacity: 70%;
+    opacity: 90%;
     color: #b176a9;
   }
     #head_contact
@@ -28,13 +27,12 @@ body
     }
     header ul
     {
-      padding-inline-start: 0em;
+        padding-inline-start: 0em;
     }
 
     header h1
     {
-      padding-left: 2em;
-      padding-right: 2em;
+      font-size: 3em;
     }
   
   nav

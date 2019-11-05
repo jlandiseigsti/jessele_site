@@ -6,7 +6,7 @@
 body 
 {
     font-family: Verdana, sans-serif;
-    background-color: #fff;
+    background-color: #fcfcfc;
     margin: 0;
 }
 
@@ -16,11 +16,10 @@ body
     grid-auto-columns: auto;
     justify-content: space-evenly;
     margin: auto;
-    padding: 1em;
     /* border-radius: 20px; */
-    background-color: #580f4f;
+    background-color: #fcfcfc;
     opacity: 90%;
-    color: #b176a9;
+    color: #050505;
   }
     #head_contact
     {
@@ -37,6 +36,13 @@ body
       margin: 0.67rem;
     }
   
+  #picture-frame{
+    max-height: 30em;
+    overflow: hidden;
+  }
+  #picture-frame img{
+    width:100%;
+  }
   nav
   {
     padding-left: 2em;
@@ -124,7 +130,7 @@ body
  
      header 
      {
-       grid-template-columns: 20% 35% 45%;
+       grid-template-columns: 40% 60%;
      }
        header ul
        {

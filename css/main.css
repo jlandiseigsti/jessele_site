@@ -15,6 +15,7 @@ body
     display: grid;
     grid-auto-columns: auto;
     justify-content: space-evenly;
+    font-size: 0.95em;
     margin: auto;
     padding: 1vh 5vw;
     background-color: #fcfcfc;
@@ -32,7 +33,7 @@ body
 
     header h1
     {
-      font-size: 3em;
+      font-size: 3.6em;
       margin: 0.67rem;
     }
   
@@ -63,7 +64,8 @@ body
     {
       display: inline;
       border-radius: 18px;
-      background-color: #C26179;
+      color:#992000;
+      background-color: #F37959;
       padding: 0.75em;
       margin: 0.25em;
       text-align: center;
@@ -98,36 +100,38 @@ body
   .page ul {
     list-style-type: none;
     display: block;
+    margin: 0.5em;
+  }
+  .page h2{
+    color: #eee;
+    text-align: center;
   }
   .page h3{
-    color: #C26179;
-  }
-
-  .page h2,h3{
-    margin-left: 20%;
+    color: #eee;
+    margin-bottom: 0px;
+    margin-left: 10%;
   }
 
   .page h4{
-    margin-left: 15%;
+    margin-left: 10%;
   }
   
-  #music {
-    background-color: #fff;
+  #sketch{
+    background-color: #992000;
+  }
+
+  #music{
+    background-color: #023046;
   }
   
-  #comedy {
-    background-color: #fff;
-  }
-  
-  #web {
-    background-color: #fff;
+  #other{
+    background-color: #366500;
   }
   
   .showDeets li{
-    color: #127;
+    color: #fff;
     display: block;
     text-align: left;
-    padding-left: 15%;
     font-size: 0.80rem;
   }
   .showDeets li strong{
